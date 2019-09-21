@@ -1,24 +1,30 @@
 <html>
+    <head>
+     <meta charset="UTF-8">
+     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+     <style type="text/css">
+                body, html
+                {
+                    margin: 0; padding: 0; height: 100%; overflow: hidden;  -webkit-backface-visibility: visible;
+                }
+                #content
+                {
+                    position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+                }
+            </style>
+    </head>
+    <body> 
 
-<head>
-    <title>Hehe</title>
-</head>
+    <script type="text/javascript">
+    function onFrameLoad() {
+            do stuff
+    };
+    </script>
 
-<style>
-body {
-    margin: 0;
-    padding: 0;
-}
-body, iframe { 
-    width: 100%;
-    height: 100%;
-}
-iframe {
-    border: 0;
-}
-</style>
-
-<body>
-    <iframe src="https://mfewvdtpwrtn42i6r3szxq-on.drv.tw/ditto/soon.html"/>
+    <div id="content">
+    <iframe onload="onFrameLoad(this)" id="app" src="https://mfewvdtpwrtn42i6r3szxq-on.drv.tw/53666/soon.html" frameborder="0" height="100%" width="100%"></iframe>
+    </div>
+    </body>
+    </html>
 
 </html>
