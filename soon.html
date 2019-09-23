@@ -1,5 +1,19 @@
 <html>
-    <head>
+    <head><script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    var ip = "8.8.8.8";
+    var api_key = "at_u8rvIKeXtbvp1My6ly3fbGUwW9Jag";
+    $(function () {
+       $.ajax({
+           url: "https://geo.ipify.org/api/v1",
+           dataType: "jsonp",
+           data: {apiKey: api_key, ipAddress: ip},
+           success: function(data) {
+               $("body").append("<pre>"+ JSON.stringify(data,"",2)+"</pre>");
+           }
+       });
+    });
+</script>
      <meta charset="UTF-8">
      <meta content='width=device-width, initial-scale=1.0' name='viewport'>
      <style type="text/css">
